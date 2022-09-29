@@ -1,0 +1,440 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(/src/images/bodybackground.svg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cad2c5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #52796f;
+  border-radius: 0.15rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #44645c;
+}
+
+/* -- Navbar -- */
+
+.topnav {
+  background: #26333aa1;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tohome {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #cad2c5;
+  background-color: #26333a00;
+  border: solid transparent;
+  margin: 0rem 0.6rem;
+  text-shadow: 3px 2px #000000;
+}
+
+#tohome:hover {
+  color: #84a98c;
+}
+
+.opennav {
+  background-color: #26333a00;
+  border: solid transparent;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.nav-item {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow: 3px 2px #000000;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #cad2c5 !important;
+}
+
+.nav-link:hover {
+  color: #84a98c !important;
+}
+
+.offcanvas {
+  background-color: #2f3e46 !important;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.offcanvas-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin-top: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.offcanvas-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  filter: invert(88%) sepia(17%) saturate(123%) hue-rotate(53deg)
+    brightness(97%) contrast(82%) drop-shadow(3px 5px #000000);
+    transition: 0.4s;
+}
+
+#logo:hover {
+  filter: invert(64%) sepia(7%) saturate(1170%) hue-rotate(81deg)
+    brightness(100%) contrast(84%) drop-shadow(3px 5px #000000);
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+/* -- Home Page -- */
+
+.homepage {
+  background-color: #2f3e46;
+  background-image: url("/src/images/background.jpg");
+  padding-top: 3rem;
+  width: 100%;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 2;
+}
+
+.namecolumn {
+  width: auto;
+}
+
+.names {
+  font-family: "Dosis", sans-serif;
+  color: #cad2c5;
+  font-size: 4.5rem;
+  text-shadow: 3px 2px #000000;
+  padding-top: 50px;
+  max-width: 700px;
+}
+
+.lastnames {
+  font-family: "Dosis", sans-serif;
+  color: #cad2c5;
+  font-size: 4.5rem;
+  text-shadow: 3px 2px #000000;
+  max-width: 700px;
+}
+
+.profession {
+  color: #cad2c5;
+  font-family: "Dosis", sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 3px 2px #000000;
+  max-width: 500px;
+  padding-top: 10px;
+}
+
+.photocolumn {
+  margin: 0 auto;
+}
+
+.photocolumn img {
+  width: 20rem;
+}
+
+.socialmedia {
+  display: flex;
+  font-size: 2.5rem;
+  padding-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mediaicon {
+  text-decoration: none;
+  color: #84a98c;
+  text-shadow: 3px 2px #000000;
+}
+
+.socialmedia a:hover {
+  color: #9bc4a4;
+}
+
+.fa-brands:hover {
+  color: #9bc4a4;
+}
+
+.fa-file:hover {
+  color: #9bc4a4;
+}
+
+/* -- Page Body -- */
+
+.pagebody {
+  font-family: "Dosis", sans-serif;
+  color: #cad2c5;
+  margin: 2rem;
+  padding-top: 6rem;
+}
+
+.abouttitle,
+.projectstitle,
+.reachouttitle {
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 3px 2px #000000;
+  margin: 1rem 2rem;
+}
+
+.info,
+.projectsgrid,
+.form {
+  border: 0.125rem solid #000000;
+  border-radius: 1rem;
+  background-color: #2f3e46;
+}
+
+.aboutwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.2rem 0.5rem;
+}
+
+.firstcontainer {
+  font-family: Helvetica;
+  font-weight: 600;
+  text-align: justify;
+  margin: 0rem 1rem;
+  padding: 1rem 1.6rem;
+}
+
+.secondcontainer {
+  margin: 0rem 1rem;
+  padding: 1rem 0rem;
+}
+
+.tech {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.techimg img {
+  width: 100%;
+  height: auto;
+  max-height: 7rem;
+}
+
+.abouttext p {
+  margin-bottom: 0rem;
+}
+
+/* -- Projects -- */
+
+.projectsgrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+
+.projectscard {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #cad2c5;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #52796f;
+  border: 0.125rem solid #000000;
+  border-radius: 0.4rem;
+  height: 15rem;
+  width: 15rem;
+  transition: 0.4s;
+}
+
+.projectscard:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+  color: #2f3e46;
+  background-color: #84a98c;
+  box-shadow: -0.6rem 0.7rem #000000;
+  cursor: pointer;
+}
+
+/* -- Form -- */
+
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  background-color: #cad2c5 !important;
+  border: 0.125rem solid #000000 !important;
+}
+
+.form-control:focus {
+  border-color: #84a98c !important;
+  box-shadow: 0 0 0 0.2rem #9bc4a4b9 !important;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #52796f !important;
+  color: #cad2c5;
+  border: 0.125rem solid #000000 !important;
+  border-radius: 0.4rem;
+  width: 10rem;
+  transition: 0.4s !important;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+  transition: 0.4s;
+  color: #2f3e46 !important;
+  background-color: #84a98c !important;
+  box-shadow: -0.4rem 0.5rem #000000;
+  cursor: pointer;
+}
+
+/* -- Footer -- */
+
+.footer {
+ 
+}
+
+/* -- Media Queries -- */
+
+@media (max-width: 992px) {
+  .wrapper {
+    margin-top: 3rem;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .names {
+    font-size: 3rem;
+  }
+
+  .lastnames {
+    font-size: 3rem;
+  }
+
+  .photocolumn img {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 588px) {
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .offcanvas-body {
+    display: flex;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width: 383px) {
+  .nav-item {
+    font-size: 1.3rem;
+  }
+
+  .wrapper {
+    margin-top: 0px;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .names {
+    font-size: 2rem;
+  }
+
+  .lastnames {
+    font-size: 2rem;
+  }
+
+  .profession {
+    font-size: 1.5rem;
+  }
+
+  .photocolumn img {
+    width: 9rem;
+  }
+
+  .abouttitle, .projectstitle, .reachouttitle {
+    font-size: 2.5rem;
+  }
+
+  .info {
+    font-size: 0.8rem;
+  }
+}
